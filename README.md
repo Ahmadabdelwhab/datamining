@@ -33,10 +33,10 @@ Suppose we have a dataset of weather conditions and whether people went for a wa
 - Total 'Yes': 6
 - Total 'No': 4
  
-\[ Gini(S) = 1 - [(6/10)^2 + (4/10)^2] \]
-\[ Gini(S) = 1 - [0.36 + 0.16] \]
-\[ Gini(S) = 1 - 0.52 \]
-\[ Gini(S) = 0.48 \]
+$\[ Gini(S) = 1 - [(6/10)^2 + (4/10)^2] \]$
+$\[ Gini(S) = 1 - [0.36 + 0.16] \]$
+$\[ Gini(S) = 1 - 0.52 \]$
+$\[ Gini(S) = 0.48 \]$
  
 **Step 2**: Suppose we're considering splitting on the 'Weather' feature.
  
@@ -46,13 +46,13 @@ Suppose we have a dataset of weather conditions and whether people went for a wa
  
 **Gini index after splitting**:
  
-\[ Gini(\text{Sunny}) = 1 - [(2/5)^2 + (3/5)^2] = 0.48 \]
-\[ Gini(\text{Overcast}) = 1 - [(0/2)^2 + (2/2)^2] = 0 \]
-\[ Gini(\text{Rainy}) = 1 - [(2/3)^2 + (1/3)^2] = 0.44 \]
+$\[ Gini(\text{Sunny}) = 1 - [(2/5)^2 + (3/5)^2] = 0.48 \]$
+$\[ Gini(\text{Overcast}) = 1 - [(0/2)^2 + (2/2)^2] = 0 \]$
+$\[ Gini(\text{Rainy}) = 1 - [(2/3)^2 + (1/3)^2] = 0.44 \]$
  
 **Weighted Gini index after splitting**:
  
-\[ \text{Weighted Gini} = (5/10) \times 0.48 + (2/10) \times 0 + (3/10) \times 0.44 = 0.264 + 0 + 0.132 = 0.396 \]
+$\[ \text{Weighted Gini} = (5/10) \times 0.48 + (2/10) \times 0 + (3/10) \times 0.44 = 0.264 + 0 + 0.132 = 0.396 \]$
  
 Comparing this with the initial Gini index of 0.48, we see that splitting on 'Weather' reduces the Gini impurity. Therefore, 'Weather' would be chosen as the splitting criterion for this node.
  

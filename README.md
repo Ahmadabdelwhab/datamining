@@ -4,7 +4,7 @@ he Gini index (or Gini impurity) is a measure used in decision tree algorithms, 
  
 Given a set \( S \) with \( N \) items and \( K \) classes, the Gini index \( Gini(S) \) is calculated as:
  
-\[ Gini(S) = 1 - \sum_{i=1}^{K} p(i)^2 \]
+$\[ Gini(S) = 1 - \sum_{i=1}^{K} p(i)^2 \]$
  
 Where:
 - \( p(i) \) is the proportion of items in class \( i \) in the set \( S \).
